@@ -6,31 +6,9 @@
   text-decoration: none;
 }
 
-:root {
-  --body-bg-color: rgba(18, 23, 33, 1);
-  --text-color: rgba(110, 128, 152, 1);
-  --color-blue: rgba(89, 100, 224, 1);
-  --color-position: #fff;
-  --card-bg-color: rgba(25, 32, 45, 1);
-}
-:root {
-  --body-bg-color: #f2f2f2;
-  --text-color: rgba(110, 128, 152, 1);
-  --color-blue: rgba(89, 100, 224, 1);
-  --color-position: rgba(25, 32, 45, 1);
-  --card-bg-color: #ffffff;
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --body-bg-color: rgba(18, 23, 33, 1);
-    --text-color: rgba(110, 128, 152, 1);
-    --color-blue: rgba(89, 100, 224, 1);
-    --color-position: #fff;
-    --card-bg-color: rgba(25, 32, 45, 1);
-  }
-}
 body {
-  background-color: var(--body-bg-color);
+  background: var(--body-bg-color);
+  transition: background 0.4s, color 0.4s;
 }
 
 .container {
@@ -63,6 +41,7 @@ header {
   width: 30%;
   margin: 30px 0;
   background-color: var(--card-bg-color);
+  border-radius: 10px;
 }
 .date,
 .company {
@@ -94,89 +73,27 @@ header {
 }
 .loadButton {
   text-align: center;
+  padding-bottom: 50px;
 }
 .loadButton button {
   background-color: var(--color-blue);
-  color: var(--card-bg-color);
+  color: #fff;
   border: none;
   border-radius: 5px;
-  padding: 10px;
+  padding: 10px 20px;
   font-size: 16px;
   font-weight: 700;
 }
 
-/*
-body.dark {
-  background-color: #292c35;
-} 
-/* #9b59b6 
-
-body.dark h1,
-body.dark .support a {
-  color: var(--card-bg-color);
-}
-
-.checkbox {
-  opacity: 0;
-  position: absolute;
-}
-
-.checkbox-label {
-  background-color: #111;
-  width: 50px;
-  height: 26px;
-  border-radius: 50px;
-  position: relative;
-  padding: 5px;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.fa-moon {
-  color: #f1c40f;
-}
-
-.fa-sun {
-  color: #f39c12;
-}
-
-.checkbox-label .ball {
-  background-color: #fff;
-  width: 22px;
-  height: 22px;
-  position: absolute;
-  left: 2px;
-  top: 2px;
-  border-radius: 50%;
-  transition: transform 0.2s linear;
-}
-
-.checkbox:checked + .checkbox-label .ball {
-  transform: translateX(24px);
-}
-
 .heading {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.modeController {
-  display: flex;
-  align-items: center;
-}
-.toggleButton {
-  margin: 0 10px;
-}
-
-*/
-.heading {
-  display: flex;
-  justify-content: space-between;
+  height: 100px;
 }
 
 .switch {
+  margin: 0 15px;
   position: relative;
   display: inline-block;
   width: 60px;
@@ -210,6 +127,10 @@ body.dark .support a {
   background: var(--color-blue);
   transition: 0.4s;
 }
+.active::before {
+  transform: translateX(26px);
+  background-color: #fff;
+}
 
 input:checked + .slider {
   background: var(--color-blue);
@@ -223,6 +144,10 @@ input:checked + .slider:before {
 }
 .slider.rounded:before {
   border-radius: 50%;
+}
+.modeController {
+  display: flex;
+  align-items: center;
 }
 
 /* form */
@@ -246,6 +171,10 @@ input:checked + .slider:before {
   width: 30%;
   height: 100%;
   border-right: 1px solid var(--text-color);
+}
+.filter input {
+  background-color: transparent;
+  color: var(--color-position);
 }
 .filter:last-child {
   border-right: none;
@@ -273,7 +202,7 @@ input:checked + .slider:before {
 .searchArea button {
   padding: 13px 30px;
   background-color: var(--color-blue);
-  color: var(--card-bg-color);
+  color: #fff;
   border: none;
   border-radius: 5px;
   font-size: 16px;
@@ -288,7 +217,7 @@ input:checked + .slider:before {
   display: block;
   position: relative;
   padding-left: 35px;
-  margin-bottom: 12px;
+  margin-bottom: 22px;
   cursor: pointer;
   font-size: 22px;
   -webkit-user-select: none;

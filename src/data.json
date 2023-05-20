@@ -107,5 +107,114 @@
     "company": "Typemaster",
     "country": "United Kingdom",
     "img": "../src/assets/images/typemaster.png"
+  },
+  {
+    "id": 13,
+    "activeTime": "5h ago",
+    "workTime": "Full time",
+    "position": "Senior Software Engineer",
+    "company": "Scoot",
+    "country": "United Kingdom",
+    "img": "../src/assets/images/Group 3.png"
+  },
+  {
+    "id": 14,
+    "activeTime": "20h ago",
+    "workTime": "Part time",
+    "position": "Haskell and PureScript Dev",
+    "company": "Blogr",
+    "country": "United States",
+    "img": "../src/assets/images/blogr.png"
+  },
+  {
+    "id": 15,
+    "activeTime": "1d ago",
+    "workTime": "Part time",
+    "position": "Midlevel Back End Engineer ",
+    "company": "Vector",
+    "country": "Russia",
+    "img": "../src/assets/images/vctr.png"
+  },
+  {
+    "id": 16,
+    "activeTime": "2d ago",
+    "workTime": "Full time",
+    "position": "Senior Application Engineer",
+    "company": "Office Lite",
+    "country": "Japan",
+    "img": "../src/assets/images/off-lite.png"
+  },
+  {
+    "id": 17,
+    "activeTime": "2d ago",
+    "workTime": "Part time",
+    "position": "Remote DevOps Engineer",
+    "company": "Pod",
+    "country": "Thailand",
+    "img": "../src/assets/images/pod.png"
+  },
+  {
+    "id": 18,
+    "activeTime": "4d ago",
+    "workTime": "Part time",
+    "position": "Desktop Support Manager",
+    "company": "Creative",
+    "country": "Germany",
+    "img": "../src/assets/images/creative.png"
+  },
+
+  {
+    "id": 19,
+    "activeTime": "2d ago",
+    "workTime": "Full time",
+    "position": "iOS Engineer ",
+    "company": "Pomodoro",
+    "country": "United States",
+    "img": "../src/assets/images/pomodoro.png"
+  },
+  {
+    "id": 20,
+    "activeTime": "1w ago",
+    "workTime": "Full time",
+    "position": "Senior EJB Developer ",
+    "company": "Maker",
+    "country": "United Kingdom",
+    "img": "../src/assets/images/maker.png"
+  },
+  {
+    "id": 21,
+    "activeTime": "1w ago",
+    "workTime": "Part time",
+    "position": "Senior Frontend Developer ",
+    "company": "Coffeeroasters",
+    "country": "Singapore",
+    "img": "../src/assets/images/coffee.png"
+  },
+  {
+    "id": 22,
+    "activeTime": "2w ago",
+    "workTime": "Freelance ",
+    "position": "App & Website Designer ",
+    "company": "Mastercraft",
+    "country": "United States",
+    "img": "../src/assets/images/mastercraft.png"
+  },
+  {
+    "id": 23,
+    "activeTime": "1mo ago",
+    "workTime": "Part time ",
+    "position": "Fullstack Developer",
+    "company": "Crowdfund",
+    "country": "New Zealand",
+    "img": "../src/assets/images/crowdfund.png"
+  },
+  {
+    "id": 24,
+    "activeTime": "4d ago",
+    "workTime": "Part time ",
+    "position": "Technical Lead Engineer",
+    "company": "Typemaster",
+    "country": "United Kingdom",
+    "img": "../src/assets/images/typemaster.png"
   }
 ]
