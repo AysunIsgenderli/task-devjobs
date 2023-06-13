@@ -4,8 +4,9 @@ import cx from "classnames";
 const Switch = ({ rounded = false, isChecked, toggleTheme }) => {
   const sliderCX = cx("slider", {
     rounded,
-    active: isChecked
+    active: isChecked,
   });
+
   return (
     <>
       <label htmlFor="" className="switch" onClick={toggleTheme}>
